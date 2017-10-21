@@ -20,7 +20,7 @@ attr_accessor :name, :artist
     self.artist = Artist.find_or_create_by_name(name)
     artist.add_song(self)
   end
-
+#adds the song instance into the @@all class variable
   def save
     @@all << self
   end

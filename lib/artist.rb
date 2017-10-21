@@ -14,6 +14,7 @@ class Artist
     @@all
   end
 
+#adds the song into the song array, keeping track of an artist's songs
   def add_song(song)
     @songs << song
   end
